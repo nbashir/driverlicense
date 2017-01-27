@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title> Driver License</title>
+</head>
+<body>
+<h1 style=text-align:center>Driver License Age Check</h1>
+<a href="/apps/">HOME</a>
+<main>
+<form action=/apps/driverlicense/dyn/checkage style=margin-left:2em>
+  <fieldset style=width:10em>
+    <legend>Age</legend>
+    <label>Years</label><br>
+    <input type=number name=ageyears min=0 max=150 required>
+    <br><label>Months</label><br>
+    <select name=agemonths>
+      <option value=0>0<option value=1>1<option value=2>2<option value=3>3<option value=4>4<option value=5>5<option value=6>6<option value=7>7<option value=8>8<option value=9>9<option value=10>10<option value=11>11
+    </select>
+</fieldset>
+<p><label>Select the state</label><br>
+<select name=state required>
+  <option value disabled selected>
+  <option value="New York">New York
+  <option value="New Jersey">New Jersey
+</select><p>
+<!--
+<input type=number name=totalagemonths hidden>
+-->
+<button type=submit>Click</button>
+</form>
+</main>
+</body>
+</html>
